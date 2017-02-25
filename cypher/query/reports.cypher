@@ -1,0 +1,1 @@
+MATCH (re:Report) RETURN re SKIP $skip LIMIT $limit
