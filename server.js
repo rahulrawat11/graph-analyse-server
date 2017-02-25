@@ -2,7 +2,7 @@ import KoaNeo4jApp from 'koa-neo4j';
 
 import logUpdate from 'log-update';
 
-logUpdate('\n Starting server instance. \n');
+logUpdate('\n Status: \n   Starting server instance. \n');
 
 const server = new KoaNeo4jApp({
   neo4j: {

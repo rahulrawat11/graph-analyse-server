@@ -12,6 +12,7 @@
       "command": "node -r \"./node_modules/babel-core/register\" ./index.js",
       "env": {
         "NODE_ENV": "develop",
+        "PORT": 3687,
         "BOLT_URL": "bolt://localhost:32768",
         "NEO4J_USER": "neo4j",
         "NEO4J_PASSWORD": "j4oen"
