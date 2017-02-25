@@ -4,7 +4,8 @@
   "description": "Use neo4j as backend, perform analyst-knowledge-graph analyse.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r \"./node_modules/babel-core/register\" index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,31 @@
   "bugs": {
     "url": "https://github.com/analyst-analyst/graph-analyse-server/issues"
   },
-  "homepage": "https://github.com/analyst-analyst/graph-analyse-server#readme"
+  "homepage": "https://github.com/analyst-analyst/graph-analyse-server#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bluebird": "^3.4.7",
+    "eazy-logger": "^3.0.2",
+    "koa-neo4j": "^1.1.0",
+    "neo4j-driver": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-static-fs": "^1.1.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-babel": "^4.0.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-graphql": "^0.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  }
 }
